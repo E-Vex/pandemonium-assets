@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "name": "Pandemonium Base Palette",
+    "task": "D-001",
+    "tile_meters": 3.0,
+    "note": "1 tile = 3 m. Units are oversized ~1.5x real-world equivalents for RTS readability."
+  },
+  "base_colors": [
+    {"id": "soot_black",     "hex": "#26282C", "usage": "tires, barrels, gun interiors, shadow sides, outlines"},
+    {"id": "gunmetal",       "hex": "#454A52", "usage": "primary structural metal on units and buildings"},
+    {"id": "slate_steel",    "hex": "#6E7681", "usage": "secondary panels, treads, machinery blocks"},
+    {"id": "bright_steel",   "hex": "#A6ADB5", "usage": "top-facing highlight planes that catch the key light"},
+    {"id": "concrete",       "hex": "#8E8E86", "usage": "building foundations, walls, bunker concrete"},
+    {"id": "bone_white",     "hex": "#D8D3C6", "usage": "trim, stripes, readability markings, Ironclad paint"},
+    {"id": "canvas_tan",     "hex": "#8A6F4D", "usage": "tarps, tents, straps, sandbags"},
+    {"id": "leather_brown",  "hex": "#5B4A3A", "usage": "belts, grips, crates, wood"},
+    {"id": "rust",           "hex": "#9C5B33", "usage": "improvised metal, wear edges, Scavenger flavor"},
+    {"id": "olive_drab",     "hex": "#3E6C4F", "usage": "military fabric, camo panels, soft-skin vehicles"},
+    {"id": "signal_yellow",  "hex": "#D9A441", "usage": "hazard stripes (always paired with black), lights, tiny accents"},
+    {"id": "glass_cyan",     "hex": "#7FB4B8", "usage": "windows, energy cells, screens; max 5% of asset area, emissive"}
+  ],
+  "team_colors": [
+    {"id": "team_red",    "hex": "#D64541"},
+    {"id": "team_orange", "hex": "#F08C1E"},
+    {"id": "team_yellow", "hex": "#F2D43C"},
+    {"id": "team_green",  "hex": "#3FA34D"},
+    {"id": "team_blue",   "hex": "#2E9BE6"},
+    {"id": "team_teal",   "hex": "#1FB8C0"},
+    {"id": "team_violet", "hex": "#8E5BD6"},
+    {"id": "team_pink",   "hex": "#EF7FA7"}
+  ],
+  "usage_ratio": {
+    "body_neutrals": 60,
+    "secondary_materials": 25,
+    "team_color": 15,
+    "accents": 5,
+    "note": "percent of painted area, approximate"
+  },
+  "lighting": {
+    "key_light_azimuth_deg": 315,
+    "key_light_elevation_deg": 60,
+    "shadow_fill_ambient": 0.35,
+    "ground_bounce_warm": 0.10,
+    "max_cast_shadow": "0.5 x height",
+    "note": "key from NW (map north = up), all lighting baked, identical across factions"
+  },
+  "camera": {
+    "pitch_deg": 55,
+    "note": "high-angle RTS camera, near-orthographic feel; design top surfaces first"
+  },
+  "kinds": {
+    "worker":          {"footprint_tiles": 0.6, "height_tiles": 0.5, "size_class": "S", "team_zone": "hard hat + backpack shell"},
+    "rifleman":        {"footprint_tiles": 0.6, "height_tiles": 0.7, "size_class": "S", "team_zone": "torso vest + helmet band"},
+    "raider":          {"footprint_tiles": 0.8, "height_tiles": 0.4, "size_class": "M", "team_zone": "engine cowl"},
+    "guardian":        {"footprint_tiles": 1.0, "height_tiles": 1.2, "size_class": "L", "team_zone": "shoulder mantlet plates"},
+    "command_center":  {"footprint_tiles": 4,   "height_tiles": 3.0, "size_class": "XL", "team_zone": "roof disc + door frame"},
+    "barracks":        {"footprint_tiles": 3,   "height_tiles": 1.2, "size_class": "L", "team_zone": "gable roof panels"},
+    "supply_depot":    {"footprint_tiles": 2,   "height_tiles": 0.9, "size_class": "M", "team_zone": "silo dome caps"},
+    "turret":          {"footprint_tiles": 2,   "height_tiles": 1.5, "size_class": "M", "team_zone": "mantlet ring"},
+    "ore_node":        {"footprint_tiles": 2,   "height_tiles": 0.8, "size_class": "M", "team_zone": "none (neutral)"}
+  }
+}
