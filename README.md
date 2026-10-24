@@ -9,6 +9,10 @@ state hashes).
 ## Layout
 
 ```
+design/                  <- Designer reference material (never ships, never loads)
+├── README.md            what belongs here and the entry rules
+└── ...                  art bibles, palettes, concept boards, role notes
+
 default/                 <- the default pack (shipped in every release archive)
 ├── manifest.ron         pack_id "tactical_field", schema_version 1
 ├── README.md            the pack's own art-direction notes
@@ -35,9 +39,14 @@ load it into (the client discovers a pack at `assets/packs/default/`).
 
 ## Rules
 
-- Art enters the **main** repo only through a Programmer brief (Standing
-  Orders v1.3): the Designer delivers files to the Owner, who hands them to
-  the Programmer, who commits them here.
+- **Two zones, two entry rules** (Standing Orders v1.4): `design/` is
+  Designer reference material — the Owner commits it directly, and nothing
+  in it ships or loads. Anything in a **pack directory** (`default/` or
+  another pack — the files the client actually loads) enters only through a
+  Programmer brief and a verified client load: the Designer delivers to the
+  Owner, the Owner relays the brief, the Programmer commits, and the
+  release pipeline's packaged smoke (or a dev run's
+  `asset pack '...' loaded` line) proves the load.
 - Manifest paths stay relative, forward slashes, inside the pack root —
   the client's pack loader rejects absolute paths, `..`, and pack escapes.
 - PNGs are limited to 2048x2048 and 64 MiB per file (the loader's limits).
