@@ -132,14 +132,16 @@ new unit from its 48 px silhouette alone, the silhouette is rejected.
 **1 tile = 3 m.** Units are deliberately oversized (~1.5× real-world) so they
 stay visible at RTS zoom. Widths are collision diameters; buildings occupy
 exact tile rectangles.
+Widths mirror the game's content data (`content/entities/*.ron`, re-derived
+2026-10-25 — rifleman 0.7, raider 0.6; corrected in D-002).
 
 ![scale](scale_chart.png)
 
 | Kind | Footprint | Size class | Height (tiles) |
 |---|---|---|---|
 | worker | 0.6 tile wide | S | 0.5 |
-| rifleman | 0.6 tile wide | S | 0.7 |
-| raider | 0.8 tile wide | M | 0.4 |
+| rifleman | 0.7 tile wide | S | 0.7 |
+| raider | 0.6 tile wide | M | 0.4 |
 | guardian | 1.0 tile wide | L | 1.2 |
 | command_center | 4×4 tiles | XL | 3.0 |
 | barracks | 3×3 tiles | L | 1.2 |
