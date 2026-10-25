@@ -1,7 +1,7 @@
 {
   "meta": {
     "name": "Pandemonium Base Palette",
-    "task": "D-001",
+    "task": "D-001 (rifleman/raider widths corrected in D-002, content data)",
     "tile_meters": 3.0,
     "note": "1 tile = 3 m. Units are oversized ~1.5x real-world equivalents for RTS readability."
   },
@@ -50,8 +50,8 @@
   },
   "kinds": {
     "worker":          {"footprint_tiles": 0.6, "height_tiles": 0.5, "size_class": "S", "team_zone": "hard hat + backpack shell"},
-    "rifleman":        {"footprint_tiles": 0.6, "height_tiles": 0.7, "size_class": "S", "team_zone": "torso vest + helmet band"},
-    "raider":          {"footprint_tiles": 0.8, "height_tiles": 0.4, "size_class": "M", "team_zone": "engine cowl"},
+    "rifleman":        {"footprint_tiles": 0.7, "height_tiles": 0.7, "size_class": "S", "team_zone": "torso vest + helmet band"},
+    "raider":          {"footprint_tiles": 0.6, "height_tiles": 0.4, "size_class": "M", "team_zone": "engine cowl"},
     "guardian":        {"footprint_tiles": 1.0, "height_tiles": 1.2, "size_class": "L", "team_zone": "shoulder mantlet plates"},
     "command_center":  {"footprint_tiles": 4,   "height_tiles": 3.0, "size_class": "XL", "team_zone": "roof disc + door frame"},
     "barracks":        {"footprint_tiles": 3,   "height_tiles": 1.2, "size_class": "L", "team_zone": "gable roof panels"},
